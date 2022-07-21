@@ -6,21 +6,17 @@ import {
   Param,
   Patch,
   Post,
-  Req,
-  Res,
 } from '@nestjs/common';
-import { CreateMovieDTO } from 'src/movies/dto/create-movie.dto';
-import { UpdateMovieDTO } from 'src/movies/dto/update-movie.dto';
-import { Movie } from 'src/movies/entities/movie.entitiy';
-import { MoviesService } from 'src/movies/movies.service';
+import { CreateMovieDTO } from './dto/create-movie.dto';
+import { UpdateMovieDTO } from './dto/update-movie.dto';
+import { Movie } from './entities/movie.entity';
+import { MoviesService } from './movies.service';
 
 @Controller('movies')
 export class MoviesController {
   constructor(private readonly moviesService: MoviesService) {}
   @Get()
-  getAll(@Res() res, @Req() req): Movie[] {
-    // opportunity to get response and request, but it's unpreferred because of probability use another frameworks or libraries
-    res.json();
+  getAll(): Movie[] {
     return this.moviesService.getAll();
   }
 
