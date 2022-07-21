@@ -1,0 +1,28 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": null,
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": "all",
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "eslint.alwaysShowStatus": true,
+  "[json]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+}
