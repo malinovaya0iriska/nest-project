@@ -25,4 +25,10 @@
   "[json]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
+  "terminal.integrated.profiles.windows": {
+    "Node.js": {
+      "path": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [] 
+    }
+  }
 }
